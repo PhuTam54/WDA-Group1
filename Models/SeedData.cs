@@ -46,7 +46,7 @@ public static class SeedData
                 },
                 new Movie
                 {
-                    Title = "Rio Bravo",
+                    Title = "Rio Bravo 2",
                     ReleaseDate = DateTime.Parse("1959-4-15"),
                     Genre = "Western",
                     Rating = "R",

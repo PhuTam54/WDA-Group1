@@ -144,6 +144,7 @@ namespace MvcMovie.Controllers
                     {
                         throw;
                     }
+
                 }
                 return RedirectToAction(nameof(Index));
             }

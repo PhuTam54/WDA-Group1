@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MvcMovie.Data;
 using MvcMovie.Models;
@@ -16,6 +16,15 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
+
+    // Delete db with seeded data
+    //var dbContext = services.GetRequiredService<MvcMovieContext>();
+
+    // Xóa dữ liệu hiện tại
+    //dbContext.Database.EnsureDeleted();
+
+    // Tạo lại cơ sở dữ liệu nếu cần
+    //dbContext.Database.EnsureCreated();
 
     SeedData.Initialize(services);
 }
